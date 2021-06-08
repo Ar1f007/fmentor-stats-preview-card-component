@@ -1,0 +1,145 @@
+.container {
+  width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  background-color: $dark-blue-900;
+  padding: 8rem 4rem;
+  @media only screen and(min-width: 80em) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card {
+  width: 100%;
+  border-radius: 8px;
+  background-color: $dark-blue-700;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 80em) {
+    width: 75%;
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: 80em) {
+    section:first-child {
+      flex: 1;
+    }
+  }
+
+  & section figure {
+    background-color: $violet-accent;
+    width: 100%;
+
+    @media screen and(min-width:80em) {
+      height: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    @media screen and(min-width:80em) {
+      height: 100%;
+    }
+  }
+
+  section:last-child {
+    display: flex;
+    flex-direction: column;
+    color: $white-900;
+    padding: 3rem 2.5rem;
+    text-align: center;
+
+    @media only screen and (min-width: 80em) {
+      flex-basis: 52%;
+      order: -1;
+      padding: 4.5rem 4.5rem 4rem;
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $white-900;
+
+    span {
+      color: $violet-accent;
+    }
+
+    @media only screen and (min-width: 80em) {
+      font-size: 3.5rem;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.6;
+    color: $white-600;
+    padding: 2rem 0;
+
+    @media only screen and (min-width: 48em) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 80em) {
+      width: 90%;
+      margin: 0;
+      padding: 2.5rem 0 4rem 0;
+    }
+  }
+
+  &__stats-list {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 48em) {
+      width: 80%;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 80em) {
+      width: 82%;
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    font-family: "Inter", sans-serif;
+    margin: 1.5rem 0;
+
+    @media only screen and (min-width: 80em) {
+      &:not(:last-child) {
+        margin: 1.5rem 0;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__stat-number {
+    color: $white-900;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  &__stat-heading {
+    color: $white-750;
+    text-transform: uppercase;
+  }
+}
