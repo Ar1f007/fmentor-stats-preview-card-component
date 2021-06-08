@@ -4,6 +4,7 @@
   margin: 0 auto;
   background-color: $dark-blue-900;
   padding: 8rem 4rem;
+  position: relative;
   @media only screen and(min-width: 80em) {
     height: 100vh;
     display: flex;
@@ -141,5 +142,35 @@
   &__stat-heading {
     color: $white-750;
     text-transform: uppercase;
+  }
+}
+
+.attribution {
+  width: 100vw;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  color: $white-750;
+  text-align: center;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media only screen and (min-width: 80em) {
+    width: 100%;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+  }
+
+  a:link,
+  a:visited {
+    color: $white-900;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  a:active {
+    transform: translateY(1px);
   }
 }
