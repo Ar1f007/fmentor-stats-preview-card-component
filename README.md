@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Ar1f007/fmentor-stats-preview-card-component)
+- Live Site URL: [Visit](https://stats-preview-card-component-ar1f007.vercel.app/)
 
 ## My process
 
