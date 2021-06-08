@@ -82,20 +82,23 @@ body {
 }
 
 @media only screen and (min-width: 80em) {
-  .card section:first-child {
+  .card figure {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
 }
 
-.card section figure {
+.card figure {
   background-color: #aa5cdb;
+}
+
+.card figure picture {
   width: 100%;
 }
 
 @media screen and (min-width: 80em) {
-  .card section figure {
+  .card figure picture {
     height: 100%;
   }
 }
@@ -114,7 +117,7 @@ body {
   }
 }
 
-.card section:last-child {
+.card section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +131,7 @@ body {
 }
 
 @media only screen and (min-width: 80em) {
-  .card section:last-child {
+  .card section {
     -ms-flex-preferred-size: 52%;
         flex-basis: 52%;
     -webkit-box-ordinal-group: 0;

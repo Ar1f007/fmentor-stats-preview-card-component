@@ -27,13 +27,16 @@
   }
 
   @media only screen and (min-width: 80em) {
-    section:first-child {
+    figure {
       flex: 1;
     }
   }
 
-  & section figure {
+  figure {
     background-color: $violet-accent;
+  }
+
+  figure picture {
     width: 100%;
 
     @media screen and(min-width:80em) {
@@ -51,7 +54,7 @@
     }
   }
 
-  section:last-child {
+  section {
     display: flex;
     flex-direction: column;
     color: $white-900;

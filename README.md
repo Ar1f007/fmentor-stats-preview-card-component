@@ -13,6 +13,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-I-learned)
 - [Author](#author)
 
 ## Overview
@@ -42,6 +43,21 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - SCSS
+
+### What I learned
+
+Learned how to use responsive images for different screen sizes using Art Direction method, also learned how to use mix-blend-mode property.
+
+```html
+<picture class="card__image">
+  <source media="(min-width:48em)" srcset="images/image-header-desktop.jpg" />
+  <img
+    src="images/image-header-mobile.jpg"
+    alt="header image"
+    class="card__image"
+  />
+</picture>
+```
 
 ## Author
 
